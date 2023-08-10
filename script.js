@@ -4,7 +4,8 @@ const mobileSize = window.matchMedia("(max-width: 1439px)");
 const shareButton = document.querySelector('#share-button'),
       attributeSection = document.querySelector('.article-attributes'),
       shareSection = document.querySelector('.share-section'),
-      footer = document.querySelector('footer');
+      footer = document.querySelector('footer'),
+      shareTip = document.querySelector('.share-tip');
       
 shareButton.addEventListener('click', showSocial);
 
@@ -14,7 +15,9 @@ function showSocial() {
         shareButton.classList.toggle('button-share');
         footer.classList.toggle('footer-share');
         shareSection.classList.toggle('hidden');
-        attributeSection.classList.toggle('hidden')
+        attributeSection.classList.toggle('hidden');
+    } else {
+        shareTip.classList.toggle('share-tip-hide')
     }
 
 }
