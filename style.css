@@ -91,7 +91,7 @@ body {
     box-shadow: var(--bs-medium);
 }
 
-.image-container {
+.image {
     height: 15rem;
     width: auto;
     background-image: url(images/drawers.jpg);
@@ -213,7 +213,7 @@ button {
         display: flex;
     } 
 
-    .image-container {
+    .image {
         width: 45rem;
         height: auto;
         background-image: url(images/drawers.jpg);
@@ -252,6 +252,7 @@ button {
         border-radius: 0.5rem;
         align-items: center;
         gap: 1rem;
+        box-shadow: var(--bs-medium);
     } 
 
     .share-tip-hide {
