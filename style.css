@@ -143,13 +143,17 @@ footer {
     color: var(--clr-400);
 }
 
-.social-icons {
-    fill: var(--clr-white);
+.social-icons  {
     display: flex;
-    gap: 0.75rem;
-    /* height: 1.25rem; */
-
+    align-items: baseline;
+    gap: 1rem;
 }
+
+.social-media {
+    fill: var(--clr-white);
+}
+
+
 
 footer {
     display: grid;
@@ -170,6 +174,7 @@ button {
     height: 2rem;
     border: none;
     background-color: var(--clr-200);
+    cursor: pointer;
 }
 
 .share-icon {
@@ -192,8 +197,6 @@ button {
     fill: var(--clr-white);
 }
 
-
-
 .hidden {
     display: none;
 }
@@ -215,8 +218,6 @@ button {
         height: auto;
         background-image: url(images/drawers.jpg);
         background-size: cover;
-        
-
     }
 
     h1 {
@@ -255,11 +256,6 @@ button {
 
     .share-tip-hide {
         display: none;
-    }
-
-    .social-icons {
-        align-items: baseline;
-        gap: 1rem;
     }
 
     .share-tip::after {
