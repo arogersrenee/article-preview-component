@@ -133,10 +133,34 @@ footer {
     gap: 0.5rem;
 }
 
+.share-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.share {
+    text-transform: uppercase;
+    letter-spacing: 0.3125rem;
+    color: var(--clr-400);
+}
+
+.social-icons {
+    fill: var(--clr-white);
+    display: flex;
+    gap: 0.75rem;
+    /* height: 1.25rem; */
+
+}
+
 footer {
     display: grid;
     align-items: center;
     grid-template-columns: 85% 15%;
+}
+
+.footer-share {
+    background-color: var(--clr-800);
 }
 
 #user-name {
@@ -158,9 +182,19 @@ button {
     background-color: var(--clr-200);
 }
 
+.button-share {
+    background-color: var(--clr-600);
+}
+
 .share-icon {
     fill: var(--clr-600);
 }
+
+.share-icon-share {
+    fill: var(--clr-white);
+}
+
+
 
 .hidden {
     display: none;
