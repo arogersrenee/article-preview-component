@@ -59,7 +59,7 @@ table {
 
 --fs-body: 0.8125rem;
 --fs-h1-mobile: 1rem;
---fs-h1-desktoop: 1.25rem;
+--fs-h1-desktop: 1.25rem;
 
 --clr-white: #FFFFFF;
 --clr-800: #48556A;
@@ -91,14 +91,12 @@ body {
     box-shadow: var(--bs-medium);
 }
 
-.drawers {
-    width: 100%;
-}
-
-.text-content {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+.image-container {
+    height: 15rem;
+    width: auto;
+    background-image: url(images/drawers.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -159,19 +157,11 @@ footer {
     grid-template-columns: 85% 15%;
 }
 
-.footer-share {
-    background-color: var(--clr-800);
-}
-
 #user-name {
     color: var(--clr-800);
     font-weight: var(--fw-bold);
     letter-spacing: 0.00763rem;
-    margin-bottom: 0.125rem;
-}
-
-.share-button-section {
-    justify-self: end;
+    margin-bottom: 0.325rem;
 }
 
 button {
@@ -182,12 +172,20 @@ button {
     background-color: var(--clr-200);
 }
 
-.button-share {
-    background-color: var(--clr-600);
-}
-
 .share-icon {
     fill: var(--clr-600);
+}
+
+.footer-share {
+    background-color: var(--clr-800);
+}
+
+.share-button-section {
+    justify-self: end;
+}
+
+.button-share {
+    background-color: var(--clr-600);
 }
 
 .share-icon-share {
@@ -198,4 +196,79 @@ button {
 
 .hidden {
     display: none;
+}
+
+.share-tip {
+   display: none;
+} 
+
+/* === DESKTOP (1440px) === */
+@media (min-width: 90em) {
+
+    .container {
+        width: 46rem;
+        display: flex;
+    } 
+
+    .image-container {
+        width: 45rem;
+        height: auto;
+        background-image: url(images/drawers.jpg);
+        background-size: cover;
+        
+
+    }
+
+    h1 {
+        font-size: var(--fs-h1-desktop);
+        line-height: 1.75rem;
+    }
+
+    .text-content {
+        padding: 2rem;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    footer {
+        padding: 0;
+        margin-top: 1.25rem;
+    }
+
+    .share-tip-container {
+        position: relative;
+    }
+
+    .share-tip {
+        background-color: var(--clr-800);
+        display: flex;
+        padding: 1.25rem 3rem;
+        position: absolute;
+        bottom: 5.5rem;
+        right: -5rem;
+        border-radius: 0.5rem;
+        align-items: center;
+        gap: 1rem;
+    } 
+
+    .share-tip-hide {
+        display: none;
+    }
+
+    .social-icons {
+        align-items: baseline;
+        gap: 1rem;
+    }
+
+    .share-tip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border: 10px solid;
+        border-color: var(--clr-800) transparent transparent transparent;
+    }
 }
